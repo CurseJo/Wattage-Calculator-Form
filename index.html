@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="icon/image" href="Images/spiningpsu.png">
+    <title>Wattage Calculator</title>
+</head>
+
+<body>
+    <main>
+        <figure><img class="headerbackground" src="Images/headerbackground.jpg" alt="P=w/t, some PSUs"></figure>
+
+        <div class="gap"></div>
+
+        <header>
+
+            <p><u>Kalkulatro PSU</u></p>
+
+            <span class="madeby">By. Tomasz Baran</span>
+
+        </header>
+
+        <div class="gap"></div>
+
+        <article>
+
+            <section class="left">
+
+                <div class="MOBACPURAM">
+
+                    <div class="MOBACPU">
+
+                        <div class="group">
+                            <b>Motherboard</b>
+                            <div class="select">
+                                <select name="MOBA" id="MOBA">
+                                    <option value="">- Select Motherboard -</option>
+                                    <option value="ATX">ATX</option>
+                                    <option value="Server">Server</option>
+                                    <option value="Mini-ITX">Mini-ITX</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <label for="CPU"><b>CPU</b></label>
+                            <div class="select">
+                                <select name="CPU" id="CPU">
+                                    <option value="">- Select Brand -</option>
+                                    <option value="AMD">AMD</option>
+                                    <option value="INTEL">INTEL</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="group">
+                        <label for="RAM"><b>RAM</b></label>
+                        <div class="select">
+                            <select name="RAM" id="RAM" style="width: 42px;">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+
+                            <span>X</span>
+
+                            <select name="RAM" id="RAM">
+                                <option value="">- Select RAM Module -</option>
+                                <option value="4GBDDR4Module">4GB DDR4 Module</option>
+                                <option value="8GBDDR4Module">8GB DDR4 Module</option>
+                                <option value="16GBDDR4Module">16GB DDR4 Module</option>
+                                <option value="32GBDDR4Module">32GB DDR4 Module</option>
+                                <option value="64GBDDR4Module">64GB DDR4 Module</option>
+                                <option value="128GBDDR4Module">128GB DDR4 Module</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="AMDINTEL">
+
+                    <div class="FULLAMD">
+
+                        <div class="group">
+                            <label for="AMDsocket"><b>AMD Socket</b></label>
+                            <div class="select">
+                                <select name="AMDsocket" id="AMDsocket" disabled>
+                                    <option value="">- Select Socket -</option>
+                                    <option value="SocketAM4">Socket AM4</option>
+                                    <option value="SocketTR4">Socket TR4</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <label for="SocketAM4"><b>AM4 CPU</b></label>
+                            <div class="select">
+                                <select name="SocketAM4" id="SocketAM4" disabled>
+                                    <option value="">- Select AM4 CPU -</option>
+                                    <option value="AMDRyzen95900X">AMD Ryzen 9 5900X</option>
+                                    <option value="AMDRyzen75800X">AMD Ryzen 7 5800X</option>
+                                    <option value="AMDRyzen75700X">AMD Ryzen 7 5700X</option>
+                                    <option value="AMDRyzen55600">AMD Ryzen 5 5600</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <lable for="SocketTR4"><b>TR4 CPU</b></lable>
+                            <div class="select">
+                                <select name="SocketTR4" id="SocketTR4" disabled>
+                                    <option value="">- Select TR4 CPU -</option>
+                                    <option value="AMDRyzenThreadripper2990WX">AMD Ryzen Threadripper 2990WX</option>
+                                    <option value="AMDRyzenThreadripper1950X">AMD Ryzen Threadripper 1950X</option>
+                                    <option value="AMDRyzenThreadripper1900X">AMD Ryzen Threadripper 1900X</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="FULLINTEL">
+
+                        <div class="group">
+                            <lable for="INTELSocket"><b>Intel Socket</b></lable>
+                            <div class="select">
+                                <select name="INTELSocket" id="INTELSocket" disabled>
+                                    <option value="">- Select Socket -</option>
+                                    <option value="SocketLGA1700">Socket LGA 1700</option>
+                                    <option value="SocketLGA1200">Socket LGA 1200</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <label for="SocketLGA1700"><b>LGA 1700 CPU</b></label>
+                            <div class="select">
+                                <select name="SocketLGA1700" id="SocketLGA1700" disabled>
+                                    <option value="">- Select LGA 1700 CPU -</option>
+                                    <option value="IntelCorei9-12900F">Intel Core i9-12900F</option>
+                                    <option value="IntelCorei7-12700KF">Intel Core i7-12700KF</option>
+                                    <option value="IntelCorei5-12600KF">Intel Core i5-12600KF</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <label for="SocketLGA1200"><b>LGA 1200 CPU</b></label>
+                            <div class="select">
+                                <select name="SocketLGA1200" id="SocketLGA1200" disabled>
+                                    <option value="">- Select LGA 1200 CPU -</option>
+                                    <option value="IntelCorei9-10900KF">Intel Core i9-10900KF</option>
+                                    <option value="IntelCorei7-10700KF">Intel Core i7-10700KF</option>
+                                    <option value="IntelCorei5-10600K">Intel Core i5-10600K</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="group">
+                    <label for="GPU"><b>Video Card</b></label>
+                    <div class="select">
+                        <select name="GPU" id="GPU">
+                            <option value="">- Select Brand -</option>
+                            <option value="AMDGPU">AMD</option>
+                            <option value="NVIDIAGPU">NVIDIA</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="AMDNVIDIA">
+
+                    <div class="group">
+                        <label for="AMDGPU"><b>AMD GPU</b></label>
+                        <div class="select">
+                            <select name="AMDGPU" id="AMDGPU" disabled>
+                                <option value="">- Select AMD Card -</option>
+                                <option value="AMDRadeonRX6800XT">AMD Radeon RX 6800 XT</option>
+                                <option value="AMDRadeonRX5700">AMD Radeon RX 5700</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <label for="NVIDIAGPU"><b>NVIDIA GPU</b></label>
+                        <div class="select">
+                            <select name="NVIDIAGPU" id="NVIDIAGPU" disabled>
+                                <option value="">- Select NVIDIA Card -</option>
+                                <option value="NVIDIAGeForceRTX3080">NVIDIA GeForce RTX 3080</option>
+                                <option value="NVIDIAGeForceRTX3060">NVIDIA GeForce RTX 3060</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="checkbox">
+
+                        <input type="checkbox"><span>SLI</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="right">
+
+                <div class="group">
+                    <label for="USB"><b>USB Ports Used And Leds</b></label>
+                    <div class="select">
+                        <input type="number" step="1">
+
+                        <span>X</span>
+
+                        <select name="USB" id="USB">
+                            <option value="">- Select USB -</option>
+                            <option value="USB3.0andUSB2.0">USB 3.0 and USB 2.0</option>
+                            <option value="USB3.0">USB 3.0</option>
+                            <option value="USB2.0">USB 2.0</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <input type="number" step="1">
+                        <span>X</span>
+                        <select name="LED" id="LED">
+                            <option value="">- Select LED -</option>
+                            <option value="LED-RGBandARGB">LED - RGB and ARGB</option>
+                            <option value="LED-RGB">LED - RGB</option>
+                            <option value="LED-ARGB">LED - ARGB</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="group">
+                    <b>Fans</b>
+
+                    <div class="select">
+                        <input type="number" step="1">
+                        <span>80mm</span>
+                        <input type="number" step="1">
+                        <span>92mm</span>
+                    </div>
+
+                    <span></span>
+
+                    <div class="select">
+                        <input type="number" step="1">
+                        <span>120mm</span>
+                        <input type="number" step="1">
+                        <span>140mm</span>
+                    </div>
+
+                    <span></span>
+
+                    <div class="select">
+                        <input type="number" step="1">
+                        <span>200mm</span>
+                        <input type="number" step="1">
+                        <span>250mm</span>
+                    </div>
+
+                </div>
+
+                <script src="java/output.js"></script>
+
+                <div class="calc">
+
+                    <div class="powerneeded">
+                        <strong>Minimum PSU Wattage:</strong>
+                    </div>
+
+                    <div class="outputpower">
+
+                        <u>
+                            <p id="outputwattage"></p>
+                        </u>
+
+                    </div>
+
+                    <button type="button" onclick="Wattage()">Count Power Supply</button>
+
+                </div>
+
+            </section>
+
+        </article>
+
+        <div class="gap"></div>
+
+        <footer>
+            <div class="copyright">
+                Copyright &copy;.
+                Projekt w przyszłości, wraz z wiedzą twócy będzie modyfikowany oraz będzie
+                polepszana jej funkcjonalość.
+                <div>
+                    <input type="text" placeholder="Zadaj pytanie twórcy
+                    " style="width: 200px;">
+                    <button type="button">Wyślij</button>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+</html>

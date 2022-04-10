@@ -1,0 +1,231 @@
+html{
+  -webkit-user-select: none;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --txtshadow: 1px 1px rgb(77, 77, 77);
+    --txtcolor: rgba(255, 0, 0, 0.445);
+    --bordercolor: rgba(100, 89, 89, 0.5);
+}
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.8603816526610644) 35%, rgba(2,0,36,0.011642156862745057) 35%, rgba(0,0,0,0.8575805322128851) 35%);
+    display: grid;
+    place-items: center;
+}
+
+.headerbackground{
+    margin-top: 1vh;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.gap{
+    display: block;
+    min-height: 2vh;
+    min-width: 95vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+main{
+    width: auto;
+    height: auto;;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.spin{
+    justify-self: center;
+    align-self: center;
+    animation: spin 4000ms linear infinite ;
+}
+
+@keyframes spin{
+    form{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+header > p{
+    justify-self: flex-start;
+    align-self: flex-start;
+    grid-column: 1;
+    margin-left: 3vh;
+    margin-top: 2vh;
+    font-size: 36px;
+    color: var(--txtcolor);
+    text-shadow: var(--txtshadow);
+    font-style: italic;
+}
+
+header > p >u{
+    color: var(--txtcolor);
+    text-shadow: var(--txtshadow);
+}
+
+header > .madeby{
+    justify-self: flex-end;
+    align-self: flex-end;
+    grid-column: 3;
+    margin-right: 3vh;
+    margin-top: 2vh;
+    font-size: 36px;
+    color: var(--txtcolor);
+    text-shadow: var(--txtshadow);
+    font-style: italic;
+}
+
+article{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 2px solid var(--bordercolor);
+    box-shadow: 5px 10px var(--txtcolor);
+    border-radius: 50px;
+    min-height: fit-content;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.left{
+    justify-self: flex-start;
+}
+
+.right{
+    justify-self: flex-end;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.group{
+    margin: 2vh;
+}
+
+b{
+    font-size: 28px;
+    color: var(--txtcolor);
+    text-shadow: var(--txtshadow);
+}
+
+select{
+    min-width: fit-content;
+    background-color: rgb(100, 89, 89);
+    border-radius: 10px;
+    text-align: center;
+    padding: 2px;
+    margin-top: 1vh;
+}
+
+span{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.568);
+    margin: 0px 10px;
+}
+
+input{
+    width: 42px;
+    padding: 2px;
+    background-color: rgb(100, 89, 89);
+    text-align: center;
+    margin-right: 1vh;
+}
+
+.calc{
+    width: 300px;
+    height: 210px;
+    border: 2px solid var(--bordercolor);
+    border-radius: 50px;
+    display: grid;
+    grid-template-rows: 70px 70px 70px;
+}
+
+button{
+    font-size: 16px;
+    height: 40px;
+    padding: 7px;
+    background-color: rgb(100, 89, 89);
+    border-radius: 15px;
+    justify-self: center;
+    align-self: center;
+    grid-row: 3;
+}
+
+.powerneeded{
+    justify-self: center;
+    align-self: center;
+    grid-row: 1;
+}
+
+.outputpower{
+    width: 300px;
+    height: 70px;
+    grid-row: 2;
+    text-align: center;
+    background-color: rgba(100, 89, 89, 0.158);
+}
+
+p{
+    font-size: 32px;
+    color: var(--txtcolor);
+    text-shadow: var(--txtshadow);
+    padding-top: 5%;
+}
+
+u{
+    color:var(--txtcolor);
+}
+
+strong{
+    font-size: 24px;
+    color: var(--txtcolor);
+    text-shadow: var(--txtshadow);
+}
+
+footer{
+    border: 2px solid var(--txtcolor);
+    background-color:rgba(0, 0, 0, 0.2) ;
+    border-radius: 50px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: fit-content;
+    padding: 10px;
+    line-height: 30px;
+    margin-bottom: 3vh;
+    min-width: fit-content ;
+    color: rgba(255, 255, 255, 0.514);
+}
+
+.AMDINTEL,
+.AMDNVIDIA,
+.MOBACPURAM{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.AMDNVIDIA{
+    grid-template-columns: auto auto auto;
+}
+
+.checkbox{
+    justify-self: center;
+    align-self: center;
+    margin-top: 20px;
+}
