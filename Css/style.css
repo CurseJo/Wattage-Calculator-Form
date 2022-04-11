@@ -28,6 +28,15 @@ body{
     border-top-left-radius: 50px;
 }
 
+figure{
+    display: grid;
+}
+
+figure > img{
+    align-self: center;
+    justify-self: center;
+}
+
 .gap{
     display: block;
     min-height: 2vh;
